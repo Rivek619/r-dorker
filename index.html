@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R-Dorker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>R-Dorker</h1>
+        <p>Description of R-Dorker</p>
+        <p>- Created by Rivek Raj Tamang</p>
+
+        <div class="input-section">
+            <label for="domain">Enter Target Domain:</label>
+            <input type="text" id="domain" placeholder="target.com">
+            <button onclick="generateDorks()">Generate</button>
+        </div>
+
+        <hr>
+
+        <div id="dorkResults">
+            <h2>Google Dorks</h2>
+            
+            <!-- Sensitive Files Section -->
+            <div class="dork-category">
+                <h3>(Sensitive Files)</h3>
+                <table>
+                    <tr>
+                        <td><a href="#" id="directoryListing" target="_blank">Directory Listing</a></td>
+                        <td><a href="#" id="configurationFiles" target="_blank">Configuration Files</a></td>
+                        <td><a href="#" id="databaseFiles" target="_blank">Database Files</a></td>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+
+            <!-- Technology Section -->
+            <div class="dork-category">
+                <h3>(Technology)</h3>
+                <table>
+                    <tr>
+                        <td><a href="#" id="wordpress" target="_blank">WordPress</a></td>
+                        <td><a href="#" id="drupal" target="_blank">Drupal</a></td>
+                        <td><a href="#" id="jira" target="_blank">Jira</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
