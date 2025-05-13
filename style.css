@@ -1,66 +1,85 @@
+/* Import a fun and modern hacker-style font */
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Share Tech Mono', monospace;
+    background-color: #0d0d0d;
+    color: #00ff88;
     margin: 0;
     padding: 0;
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1100px;
     width: 90%;
     margin: 50px auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    padding: 25px;
+    background-color: #121212;
+    border: 1px solid #00ff88;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 255, 136, 0.2);
 }
 
 h1 {
     text-align: center;
-    color: #333;
-    font-size: 36px;
+    font-size: 42px;
+    color: #00ff88;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #00ff88;
 }
 
 p {
     text-align: center;
     font-size: 16px;
-    color: #666;
+    color: #a0ffa0;
+    margin: 10px 0;
 }
 
 .input-section {
     text-align: center;
-    margin-bottom: 30px;
+    margin: 30px 0;
 }
 
 input {
-    width: 50%; /* Shortened the input width */
-    padding: 12px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    width: 60%;
+    padding: 14px;
+    background-color: #000;
+    color: #00ff88;
+    border: 2px solid #00ff88;
+    border-radius: 6px;
     font-size: 16px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto; /* Keep the input centered */
+    outline: none;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px #00ff88;
+}
+
+input::placeholder {
+    color: #44ff88;
+    opacity: 0.6;
 }
 
 button {
-    padding: 12px 20px;
-    border: none;
-    background-color: #007bff;
-    color: white;
+    padding: 12px 25px;
     font-size: 16px;
+    border: 2px solid #00ff88;
+    border-radius: 6px;
+    background-color: transparent;
+    color: #00ff88;
     cursor: pointer;
-    border-radius: 5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 8px #00ff88;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #00ff88;
+    color: #000;
+    box-shadow: 0 0 15px #00ff88;
 }
 
 hr {
-    border: 1px solid #ddd;
+    border: 1px solid #00ff88;
     margin: 30px 0;
+    opacity: 0.2;
 }
 
 .dork-category {
@@ -68,56 +87,104 @@ hr {
 }
 
 .dork-category h3 {
-    font-size: 20px;
-    color: #333;
-    margin-bottom: 10px;
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #00ff88;
     text-align: center;
-    display: flex;
-    justify-content: center;
+    text-shadow: 0 0 5px #00ff88;
 }
 
 .dork-category table {
     width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
     text-align: center;
+    border-spacing: 10px;
 }
 
 table td {
-    padding: 10px;
-    width: 33%; /* Ensure equal column widths */
+    width: 33%;
 }
 
 table a {
     display: block;
-    padding: 10px 20px;
+    padding: 12px;
+    border: 2px solid #00ff88;
+    background-color: transparent;
+    color: #00ff88;
     text-decoration: none;
-    background-color: #007bff;
-    color: white;
-    border-radius: 5px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
     font-weight: bold;
-    margin: 5px;
-    text-align: center;
+    box-shadow: 0 0 8px #00ff88;
 }
 
 table a:hover {
-    background-color: #0056b3;
+    background-color: #00ff88;
+    color: #000;
+    box-shadow: 0 0 15px #00ff88;
 }
 
 #dorkResults h2 {
-    font-size: 24px;
     text-align: center;
+    font-size: 26px;
     margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
+    color: #00ff88;
+    text-shadow: 0 0 8px #00ff88;
 }
 
+/* Responsive Layout */
 @media screen and (max-width: 768px) {
+    input {
+        width: 80%;
+    }
+
     table td {
-        padding: 8px;
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
     }
 
     table a {
-        padding: 8px 15px;
+        margin: 10px auto;
     }
+}
+
+.footer {
+    text-align: center;
+    margin-top: 60px;
+    padding: 20px;
+    border-top: 1px solid #00ff88;
+    color: #00ff88;
+    font-size: 16px;
+    background-color: #0d0d0d;
+}
+
+.social-buttons {
+    margin-top: 10px;
+}
+
+.social-link {
+    display: inline-block;
+    margin: 10px 15px;
+    padding: 10px 25px;
+    border: 2px solid #00ff88;
+    color: #00ff88;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    box-shadow: 0 0 8px #00ff88;
+}
+
+.social-link:hover {
+    background-color: #00ff88;
+    color: #000;
+    box-shadow: 0 0 15px #00ff88;
+}
+
+.linkedin {
+    background-color: transparent;
+}
+
+.github {
+    background-color: transparent;
 }
